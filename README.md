@@ -133,7 +133,7 @@ if age1 > 18 || age2 > 18 {
     print("One of them is over 18")
 }
 
-//The ternary operator
+### The ternary operator
 
 let card1 = 12
 let card2 = 23
