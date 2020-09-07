@@ -81,3 +81,91 @@ enum Weather {
 
 That means our weather can be sunny, it can be windy, or it can be rainy. However, when it’s windy we’re also asking to store how fast the wind is as an integer – whether it’s 10 kilometers per hour (kph), 20, 30, and so on. And when it’s rainy, we’re storing a percentage chance of the rain happening and a volume value, storing how much rain will store.
 
+## Day 3
+
+### Arithmetic operators
++ , - , * , / , %
+
+### Operator overloading
+Operator that can be used to join not only integers but all strings and array
+eg. 
+let fakers = "Fakers gonna"
+let action = fakers + " fake" // + joins string
+output: Fakers gonna fake
+
+### Compound assignment operators
+Swift has shorthand operators that combine one operator with an assignment, so you can change a variable in place. These look like the existing operators you know – +, -, *, and /, but they have an = on the end because they assign the result back to whatever variable you were using.
+
+For example, if someone scored 95 in an exam but needs to be penalized 5 points, you could write this:
+
+var score = 95
+score -= 5
+
+### Comparison Operators
+Operators such as ==, != , <= , >= , >, <
+
+### Conditions
+if, else if , else 
+eg.
+let firstCard = 12
+let secondCard = 10
+
+if firstCard + secondCard == 2 {
+    print("Aces - lucky!")
+}
+else if firstCard + secondCard == 21 {
+    print("Blackjack!")
+}
+else {
+    print("Regular card")
+}
+
+### Combining conditions
+eg.
+let age1 = 12
+let age2 = 22
+
+if age1 > 18 && age2 > 18 {
+    print("Both are over 18")
+}
+
+if age1 > 18 || age2 > 18 {
+    print("One of them is over 18")
+}
+
+//The ternary operator
+
+let card1 = 12
+let card2 = 23
+
+print(card1 == card2 ? "cards are the same" : "cards are different")
+
+### Switch statement
+Used to make cases 
+eg.
+let weather = "sunny"
+
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+case "windy":
+    print("Bring a jacket")
+case "sunny":
+    print("Wear sunscreen")
+default:
+    print("Enjoy your day")
+}
+
+###Range operators
+it is used to define ranges
+eg.
+let marks = 85
+
+switch marks {
+case 0..<50:
+    print("You failed badly")
+case 50..<85:
+    print("You did OK.")
+default:
+    print("You did great")
+}
